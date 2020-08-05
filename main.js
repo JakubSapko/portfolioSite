@@ -5,3 +5,9 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+window.onload = function() {
+  Particles.init({
+    selector: '.background'
+  });
+};
