@@ -1,5 +1,4 @@
 body, html {
-
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
@@ -36,30 +35,21 @@ body, html {
   width: 100%;
   text-align: center;
   color: #000;
+  z-index: 0;
 }
 
-.second{
-  position: absolute;
-  left: 45%;
-  top: 55%;
-  width: 200px;
-  text-align: center;
-  color: #000;
-}
 
-.second span.border {
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
+
+
 
 .caption span.border {
-  background-color: #111;
+
+  background-color: #333333;
   color: #fff;
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
+  z-index: 0;
 }
 
 h3 {
@@ -81,8 +71,8 @@ h3 {
 .sidenav {
 height: 100%;
 width: 0%;
-position: fixed;
-z-index: 1;
+position: absolute;
+z-index: 9999;
 left: 0;
 background-color: #111;
 overflow-x: hidden;
@@ -95,16 +85,18 @@ font-size:30px;
 cursor:pointer;
 margin:30px;
 color:white;"
-
+z-index: 9999;
 }
 
 .sidenav a {
 padding: 8px 8px 8px 32px;
+margin-top: 3%;
 text-decoration: none;
 font-size: 25px;
 color: #818181;
 display: block;
 transition: 0.3s;
+text-align: center;
 }
 
 .sidenav a:hover {
@@ -120,6 +112,7 @@ margin-left: 50px;
 color: white;
 }
 
+
 @media screen and (max-height: 450px) {
 .sidenav {padding-top: 15px;}
 .sidenav a {font-size: 18px;}
@@ -132,20 +125,21 @@ color: white;
   color: black;
 }
 
-canvas{
-  display: block;
-  vertical-align: bottom;
-  overflow: hidden;
+.tech-icon{
+  margin-top: 10px;
+  max-width: 31%;
 }
 
-#particlesjs {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.tech-icon-last{
+  margin-top: 10px;
+  max-width: 31%;
+  display: inline;
+  margin-left: 18%;
 }
 
-.background {
-  position: absolute;
-  z-index: 10;
-  opacity: 0.35;
+.tool-icon{
+  margin-top: 10px;
+  max-width: 15%;
+  display: inline;
+  margin-left: 15%;
 }
